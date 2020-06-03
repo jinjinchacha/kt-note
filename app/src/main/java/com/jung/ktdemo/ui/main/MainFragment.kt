@@ -10,6 +10,8 @@ import com.jung.ktdemo.ui.base.BaseFragment
 
 class MainFragment : BaseFragment<MainFragmentBinding>() {
 
+    override fun getToolbar() = binding.toolbar
+
     override fun bindView(inflater: LayoutInflater, container: ViewGroup?): MainFragmentBinding =
         MainFragmentBinding.inflate(inflater, container, false)
 
@@ -26,4 +28,5 @@ class MainFragment : BaseFragment<MainFragmentBinding>() {
             (adapter as MainAdapter).submitList(subjectList)
         }
     }
+
 }

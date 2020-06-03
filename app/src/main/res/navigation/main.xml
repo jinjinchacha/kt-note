@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.jung.ktdemo.ui.main.MainFragment"
-        android:label="MainFragment"
+        android:label="Subjects"
         tool:layout="@layout/main_fragment">
         <action
             android:id="@+id/action_mainFragment_to_coroutineFragment"
@@ -17,6 +17,6 @@
     <fragment
         android:id="@+id/coroutineFragment"
         android:name="com.jung.ktdemo.ui.coroutine.CoroutineFragment"
-        android:label="CoroutineFragment"
+        android:label="Coroutine"
         tool:layout="@layout/coroutine_fragment" />
 </navigation>

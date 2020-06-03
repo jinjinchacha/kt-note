@@ -4,16 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import com.jung.ktdemo.databinding.CoroutineFragmentBinding
 import com.jung.ktdemo.ui.base.BaseFragment
 import kotlinx.coroutines.*
-import java.lang.Exception
 
 class CoroutineFragment : BaseFragment<CoroutineFragmentBinding>() {
 
     private lateinit var timerJob: Job
     private var time = 10
+
+    override fun getToolbar(): Toolbar = binding.toolbar
 
     override fun bindView(
         inflater: LayoutInflater,
@@ -161,4 +163,5 @@ class CoroutineFragment : BaseFragment<CoroutineFragmentBinding>() {
         println("fException: ${Thread.currentThread()}")
         throw Exception("fException exception")
     }
+
 }
