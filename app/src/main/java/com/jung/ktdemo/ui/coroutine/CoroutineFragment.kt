@@ -15,8 +15,6 @@ class CoroutineFragment : BaseFragment<CoroutineFragmentBinding>() {
     private lateinit var timerJob: Job
     private var time = 10
 
-    override fun getToolbar(): Toolbar = binding.toolbar
-
     override fun bindView(
         inflater: LayoutInflater,
         container: ViewGroup?

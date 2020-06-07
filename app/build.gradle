@@ -55,6 +55,7 @@ dependencies {
     implementation "com.google.android.material:material:$material_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
     implementation "androidx.viewpager2:viewpager2:$viewpager2_version"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
 
     // Navigation
     implementation "androidx.navigation:navigation-runtime-ktx:$navigation_version"
@@ -87,6 +88,10 @@ dependencies {
     implementation "org.koin:koin-core:$koin_version"
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
     implementation "org.koin:koin-android:$koin_version"
+
+    // coil
+    implementation "io.coil-kt:coil:$coil_version"
+    implementation "io.coil-kt:coil-base:$coil_version"
 
     // Testing
     testImplementation "junit:junit:$junit_version"

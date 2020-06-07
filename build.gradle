@@ -12,6 +12,7 @@ buildscript {
         material_version = '1.1.0'
         constraint_layout_version = '1.1.3'
         viewpager2_version = '1.0.0'
+        recyclerview_version = '1.2.0-alpha03'
         // Navigation
         navigation_version = '2.2.2'
         // Coroutine
@@ -26,6 +27,8 @@ buildscript {
         lifecycle_version = '2.2.0'
         // Koin
         koin_version = '2.1.5'
+        // Coil
+        coil_version = '0.9.5'
         // testing
         junit_version = '4.13'
         androidx_test_version = '1.2.0'

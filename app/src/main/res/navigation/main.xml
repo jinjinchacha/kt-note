@@ -11,12 +11,22 @@
         android:label="Subjects"
         tool:layout="@layout/main_fragment">
         <action
-            android:id="@+id/action_mainFragment_to_coroutineFragment"
+            android:id="@+id/to_coroutineFragment"
             app:destination="@id/coroutineFragment" />
+        <action
+            android:id="@+id/to_mergeAdapterFragment"
+            app:destination="@id/mergeAdapterFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/coroutineFragment"
         android:name="com.jung.ktdemo.ui.coroutine.CoroutineFragment"
         android:label="Coroutine"
         tool:layout="@layout/coroutine_fragment" />
+
+    <fragment
+        android:id="@+id/mergeAdapterFragment"
+        android:name="com.jung.ktdemo.ui.mergeadaptere.MergeAdapterFragment"
+        android:label="MergeAdapterFragment"
+        tool:layout="@layout/mergeadapter_fragment"/>
 </navigation>

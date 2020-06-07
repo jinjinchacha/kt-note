@@ -11,8 +11,6 @@ import com.jung.ktdemo.ui.base.BaseFragment
 
 class MainFragment : BaseFragment<MainFragmentBinding>(), OnClickEvent {
 
-    override fun getToolbar() = binding.toolbar
-
     override fun bindView(inflater: LayoutInflater, container: ViewGroup?): MainFragmentBinding =
         MainFragmentBinding.inflate(inflater, container, false)
 
@@ -20,7 +18,8 @@ class MainFragment : BaseFragment<MainFragmentBinding>(), OnClickEvent {
         super.onViewCreated(view, savedInstanceState)
 
         val subjectList = listOf(
-            "Coroutine"
+            "Coroutine",
+            "MergeAdapter"
         )
 
         with(binding.recycler) {
@@ -32,7 +31,8 @@ class MainFragment : BaseFragment<MainFragmentBinding>(), OnClickEvent {
 
     override fun navigate(subject: String) {
         when (subject) {
-            "Coroutine" -> findNavController().navigate(MainFragmentDirections.actionMainFragmentToCoroutineFragment())
+            "Coroutine" -> findNavController().navigate(MainFragmentDirections.toCoroutineFragment())
+            "MergeAdapter" -> findNavController().navigate(MainFragmentDirections.toMergeAdapterFragment())
         }
     }
 }
