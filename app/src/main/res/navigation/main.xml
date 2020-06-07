@@ -27,6 +27,6 @@
     <fragment
         android:id="@+id/mergeAdapterFragment"
         android:name="com.jung.ktdemo.ui.mergeadaptere.MergeAdapterFragment"
-        android:label="MergeAdapterFragment"
+        android:label="MergeAdapter"
         tool:layout="@layout/mergeadapter_fragment"/>
 </navigation>

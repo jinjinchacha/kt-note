@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.MergeAdapter
 import com.jung.ktdemo.databinding.MergeadapterFragmentBinding
 import com.jung.ktdemo.ui.base.BaseFragment
@@ -58,7 +59,7 @@ class MergeAdapterFragment : BaseFragment<MergeadapterFragmentBinding>(), ClickL
          * Faking a long running network call.
          * This is a contrived example. Ideally this would be in a repository class
          * */
-        CoroutineScope(Dispatchers.Main).launch {
+        lifecycleScope.launch {
             delay(2_000L)
             val list = getWhatsNew()
             whatsNewAdapter.whatsNew = list
