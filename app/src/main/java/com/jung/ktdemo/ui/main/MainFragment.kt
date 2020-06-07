@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jung.ktdemo.databinding.MainFragmentBinding
 import com.jung.ktdemo.ui.base.BaseFragment
 
-class MainFragment : BaseFragment<MainFragmentBinding>() {
+class MainFragment : BaseFragment<MainFragmentBinding>(), OnClickEvent {
 
     override fun getToolbar() = binding.toolbar
 
@@ -19,14 +20,19 @@ class MainFragment : BaseFragment<MainFragmentBinding>() {
         super.onViewCreated(view, savedInstanceState)
 
         val subjectList = listOf(
-            Pair("Coroutine", MainFragmentDirections.actionMainFragmentToCoroutineFragment())
+            "Coroutine"
         )
 
         with(binding.recycler) {
             layoutManager = LinearLayoutManager(context)
-            adapter = MainAdapter()
+            adapter = MainAdapter(this@MainFragment)
             (adapter as MainAdapter).submitList(subjectList)
         }
     }
 
+    override fun navigate(subject: String) {
+        when (subject) {
+            "Coroutine" -> findNavController().navigate(MainFragmentDirections.actionMainFragmentToCoroutineFragment())
+        }
+    }
 }
