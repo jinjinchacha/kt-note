@@ -8,7 +8,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.jung.youtube"
+        applicationId "com.jung.ktdemo"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
@@ -92,6 +92,7 @@ dependencies {
     // coil
     implementation "io.coil-kt:coil:$coil_version"
     implementation "io.coil-kt:coil-base:$coil_version"
+    implementation "io.coil-kt:coil-gif:$coil_version"
 
     // Testing
     testImplementation "junit:junit:$junit_version"

@@ -21,12 +21,12 @@ fun getEngineers(): List<Engineer> {
         Engineer(
             "Ann Tai",
             "Designer",
-            image = "https://avatars1.githubusercontent.com/u/13378873?s=460&u=094d69ba59bd58b1159a00dc5516053710efe3fb&v=4"
+            image = "https://event.family.com.tw/2019_barbapapa/assets/images/barba.gif"
         ),
         Engineer(
             "Prateek Prasad",
             "Android Engineer",
-            image = "https://avatars0.githubusercontent.com/u/5685314?s=460&u=fb9fe7fe2ec98b7041e2bfed11505a3daac80166&v=4"
+            image = "https://5b0988e595225.cdn.sohucs.com/images/20190331/4874ab834138444d953653d1913c558c.gif"
         ),
         Engineer(
             "Marcus Wermuth",
