@@ -19,7 +19,8 @@ class MainFragment : BaseFragment<MainFragmentBinding>(), OnClickEvent {
 
         val subjectList = listOf(
             "Coroutine",
-            "MergeAdapter"
+            "MergeAdapter",
+            "DelegatePattern"
         )
 
         with(binding.recycler) {
@@ -33,6 +34,7 @@ class MainFragment : BaseFragment<MainFragmentBinding>(), OnClickEvent {
         when (subject) {
             "Coroutine" -> findNavController().navigate(MainFragmentDirections.toCoroutineFragment())
             "MergeAdapter" -> findNavController().navigate(MainFragmentDirections.toMergeAdapterFragment())
+            "DelegatePattern" -> findNavController().navigate(MainFragmentDirections.toDelegateFragment())
         }
     }
 }

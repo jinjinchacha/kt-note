@@ -6,10 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.MergeAdapter
-import com.google.android.material.internal.ViewUtils
 import com.google.android.material.internal.ViewUtils.dpToPx
 import com.jung.ktdemo.databinding.MergeadapterFragmentBinding
 import com.jung.ktdemo.ui.base.BaseFragment
@@ -18,8 +16,6 @@ import com.jung.ktdemo.ui.mergeadaptere.adapter.WhatsNewAdapter
 import com.jung.ktdemo.ui.mergeadaptere.model.getEngineers
 import com.jung.ktdemo.ui.mergeadaptere.model.getWhatsNew
 import com.jung.ktdemo.utils.VerticalItemDecoration
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

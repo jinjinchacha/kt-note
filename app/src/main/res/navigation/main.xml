@@ -16,6 +16,9 @@
         <action
             android:id="@+id/to_mergeAdapterFragment"
             app:destination="@id/mergeAdapterFragment" />
+        <action
+            android:id="@+id/to_delegateFragment"
+            app:destination="@id/delegateFragment" />
     </fragment>
 
     <fragment
@@ -29,4 +32,10 @@
         android:name="com.jung.ktdemo.ui.mergeadaptere.MergeAdapterFragment"
         android:label="MergeAdapter"
         tool:layout="@layout/mergeadapter_fragment"/>
+
+    <fragment
+        android:id="@+id/delegateFragment"
+        android:name="com.jung.ktdemo.ui.delegate.DelegateFragment"
+        android:label="DelegateFragment"
+        tool:layout="@layout/delegate_fragment"/>
 </navigation>
