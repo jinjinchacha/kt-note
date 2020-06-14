@@ -21,6 +21,11 @@ class DelegateFragment : BaseFragment<DelegateFragmentBinding>() {
 
         val b = BaseImpl("A")
         Derived(b).printA() // 輸出 A
+
+
+        val e = Example()
+        e.s="Hello world"
+        println(e.s)
     }
 
 }

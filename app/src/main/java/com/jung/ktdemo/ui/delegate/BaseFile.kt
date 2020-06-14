@@ -20,4 +20,10 @@ class BaseImpl(val s: String) : Base {
     }
 }
 
+// 在要實現的接口後面 + by + 委託對象
 class Derived(b: Base) : Base by b
+
+class Example {
+    var s: String by DelegateString()
+}
+
